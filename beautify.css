@@ -1,0 +1,21 @@
+/* Visual refinement layer: keeps the original component styles easy to maintain. */
+.app-shell{background:#f7f9fc}
+.sidebar{width:278px;background:#0f1b2d;padding:26px 16px 16px;box-shadow:8px 0 24px #1526440d;z-index:1}
+.brand{padding:1px 10px 38px}.brand-mark{width:38px;height:38px;border-radius:11px;box-shadow:0 7px 18px #547df642}.brand strong{font-size:18px}
+.sidebar-label{margin-bottom:12px;font-size:10px;font-weight:700;letter-spacing:1.4px}.category-row{min-height:46px;border:1px solid transparent}.category-row:hover{background:#1a2a43;color:#eef3ff}.category-row.selected{background:#253b61;border-color:#304c79;box-shadow:inset 3px 0 #7e9dff}.category-main{padding-left:14px}.category-name{font-size:13px;font-weight:500}.add-category{margin:18px 3px 0;justify-content:center;padding:11px;border-color:#405574}.sidebar-bottom{padding:20px 9px 2px}
+.main{background:#f7f9fc}.topbar{height:70px;padding:0 48px;box-shadow:0 1px 0 #dfe5ef}.top-actions{gap:10px}.outline-button{border-radius:8px;padding:9px 13px;color:#647187;transition:.15s}.outline-button svg{color:#7d8da5}.outline-button:hover{border-color:#b5c5df;background:#f6f8fc;transform:translateY(-1px)}
+.content{max-width:1140px;padding:54px 48px 90px}.content-heading{padding:0 1px 2px}.eyebrow{font-size:10px;font-weight:700;letter-spacing:1.8px;color:#8191aa;margin-bottom:12px}.content h1{font-size:34px;letter-spacing:-.8px;font-weight:750}.subtitle{font-size:13px;color:#8290a6;margin-top:12px}.primary-button{border-radius:8px;padding:10px 15px;transition:.15s}.primary-button:hover{transform:translateY(-1px);box-shadow:0 5px 14px #3d69f238}
+.toolbar{margin:38px 0 17px}.search-box{height:43px;border-radius:9px;box-shadow:0 2px 6px #23365408}.search-box input{font-size:12px}.result-count{font-size:11px;color:#8693a8}.question-list{gap:13px}.question-card{border-radius:11px;padding:20px 21px 15px;box-shadow:0 3px 12px #25395d08;transition:box-shadow .18s,border-color .18s,transform .18s}.question-card:hover{border-color:#cbd6e7;box-shadow:0 8px 22px #25395d12;transform:translateY(-1px)}.question-title h3{font-size:15px;letter-spacing:.05px}.question-actions .answer-button{border-radius:6px;font-weight:600}.status-row{margin-top:15px}.status-label{font-weight:600;color:#8a96a8}.status-button{border-radius:6px;padding:6px 11px;transition:.15s}.status-button:hover{transform:translateY(-1px)}.answer{margin-top:18px;padding:18px 3px 4px;color:#56657b}.markdown{font-size:13px;line-height:1.85}.markdown blockquote{border-left:3px solid #b7c8f6;margin:12px 0;padding-left:14px;color:#7a879b}.modal{border-radius:13px;box-shadow:0 24px 70px #14244040;padding:25px}.modal-head{margin-bottom:24px}.modal-head h2{font-size:19px}
+@media(max-width:760px){.sidebar{width:228px}.topbar{padding:0 24px}.content{padding:40px 24px 70px}.content h1{font-size:29px}}
+@media(max-width:560px){
+  .app-shell{display:block;min-width:320px}
+  .sidebar{width:100%;min-height:0;padding:14px 12px 10px;box-shadow:none}
+  .brand{padding:2px 7px 14px}.brand-mark{width:35px;height:35px}.brand strong{font-size:17px}
+  .category-list{flex-direction:row;overflow-x:auto;gap:5px;padding-bottom:3px;scrollbar-width:none}.category-list::-webkit-scrollbar{display:none}
+  .category-row{min-width:145px}.sidebar-label,.add-category,.sidebar-bottom{display:none}
+  .main{width:100%}.topbar{height:57px;padding:0 15px}.breadcrumb{font-size:12px}.top-actions{gap:5px}.top-actions .outline-button{font-size:0;padding:8px}.top-actions .outline-button svg{margin:0}
+  .content{padding:28px 15px 45px}.content-heading{align-items:flex-start;flex-direction:column;gap:20px}.content h1{font-size:27px}.subtitle{font-size:12px}.content-heading>.primary-button{align-self:stretch}
+  .toolbar{margin-top:26px;flex-wrap:wrap;gap:9px}.search-box{width:100%}.result-count{margin-left:2px}
+  .question-card{padding:15px}.question-title h3{white-space:normal;line-height:1.45}.question-actions{margin-left:auto}.question-actions .icon-button{display:none}.question-actions .answer-button{font-size:11px;padding:5px 2px;white-space:nowrap}
+  .status-row{margin-left:0;flex-wrap:wrap;gap:6px}.answer{margin-left:0}.modal{width:100%;max-height:calc(100vh - 24px);padding:19px}.modal-statuses{flex-wrap:wrap}
+}
